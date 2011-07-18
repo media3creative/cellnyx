@@ -60,14 +60,12 @@
 	width: $sidebar-width
 	margin: 0 0 $v-gap $h-gap
 	
-
-// Subnavigation-style sidebar box
 .subnav, .text, .button, .form
 	@extend .container-setup
 	h1
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		font-family: "Embed-Helvetica"
 		position: relative
 		color: $option-title
 		background: $option-title-bg
@@ -95,7 +93,7 @@
 
 .link
 	@extend .clearfix
-	@extend .font-trebuchet
+	@extend .font-helvetica
 	@extend .box
 	position: relative
 	width: ($option-width - ($h-gap *2))
@@ -115,7 +113,7 @@
 		top: 5px
 		width: 7px
 		height: 7px
-		background: $secondary
+		background: $gray-light
 		font-size: 11px
 		text-align: center
 	p
@@ -131,7 +129,7 @@
 			font-size: 12px
 			color: $option-link
 			&:hover
-				color: $secondary
+				color: $option-link-hover
 				text-decoration: none
 					
 // Text-style sidebar box
@@ -175,7 +173,7 @@
 			text-transform: uppercase
 			text-decoration: none
 
-// Button-style sidebar box
+// Form-style sidebar box
 .form
 	@extend .contact-form
 	iframe
@@ -198,7 +196,7 @@
 			@extend .clearfix
 			position: relative
 			padding: 0 0 ($v-gap) 0
-			border-bottom: 1px dotted $section-border
+			//border-bottom: 1px dotted $section-border
 			&:last-child
 				padding-bottom: 0
 				border-bottom: none
@@ -213,20 +211,20 @@
 				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
 				z-index: 100
 			h1
-				font-family: "EmbedFont-1"
+				font-family: "Embed-Helvetica"
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
-				padding: 0 3em 0.5em $corner-radius
+				padding: 0 3em 0.2em $corner-radius
 				color: $section-title !important
-				font-size: 18px
+				font-size: 24px
 				font-weight: 100
-				text-transform: uppercase
+				text-transform: none
 				word-spacing: .1em
 				letter-spacing: .05em
 				border-bottom: 1px solid $section-lines
 			p
-				@extend .font-trebuchet
+				@extend .font-helvetica
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
@@ -239,10 +237,10 @@
 				&:last-child
 					margin-bottom: 0
 				a
-					color: $primary-light
+					color: $section-link
 					text-decoration: none
 					&:hover
-						color: $primary
+						color: $section-link-hover
 
 .container-setup
 	@extend .box

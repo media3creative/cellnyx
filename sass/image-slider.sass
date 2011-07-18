@@ -19,7 +19,7 @@
 		padding: $v-gap 0 ($v-gap/2)
 		h1
 			@extend .box
-			font-family: "EmbedFont-1"
+			font-family: "Embed-Helvetica"
 			width: $inside-width
 			margin: 15px 0 0 0
 			padding: 0 ($h-gap) 0.2em 300px
@@ -62,13 +62,12 @@
 			@extend .corner-all
 			position: absolute
 			bottom: ($v-gap/2)
-			left: $h-gap
 			color: $image-slider-link	
 			border: 1px solid $primary
 			&:hover
 				@extend .bg-gradient-reverse
 			a
-				font-family: "EmbedFont-1"
+				font-family: "Embed-Helvetica"
 				display: block
 				padding: 9px 2em 8px 2em
 				color: inherit
@@ -76,7 +75,12 @@
 				font-weight: 200
 				text-decoration: none
 				text-transform: uppercase
-			
+
+// Sets p.link button location
+.button-left
+	left: $h-gap
+.button-right
+	right: $h-gap		
 	
 	
 //NIVO SLIDER
@@ -181,7 +185,7 @@ a.nivo-nextNav
 #slider-wrapper 
 	@extend .box
 	@extend .corner-all
-	font-family: "EmbedFont-1"
+	font-family: "Embed-Helvetica"
 	position: relative
 	width: $inside-width
 	height: $slider-height

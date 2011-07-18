@@ -1,35 +1,82 @@
-- @sitename = "Site Name"
+- @sitename = "Franchise Resource Group"
 
 // MAIN NAVIGATION
-- @link1 = ["Home", "/home"]
-- @link2 = ["About", "/page2"]
-- @link3 = ["Services", "/page3"]
-- @link4 = ["Gallery", "/page4"]
+- @link1 = ["Home", "/landing"]
+- @link2 = ["Franchise Solutions", "/solutions"]
+- @link3 = ["Franchise Development", "/development"]
+- @link4 = ["Financial Services", "/financial"]
 - @link5 = ["Contact", "/page5"]
 
 // FOOTER LINKS
-- @linkA1 = ["link name", "/path"]
-- @linkA2 = ["link name", "/path"]
-- @linkA3 = ["link name", "/path"]
-- @linkA4 = ["link name", "/path"]
-- @linkA5 = ["link name", "/path"]
+//    Names
+- @pageA= "Resources"
+- @pageA1= "10 Steps to Success"
+- @pageA3= "Franchise FAQ"
+- @pageA5= "Franchising Help"
+- @pageA7= "History of Franchising"
+- @pageA9= "Master Franchising"
+- @pageA12= "Future of Franchising"
 
-- @linkB1 = ["link name", "/path"]
-- @linkB2 = ["link name", "/path"]
-- @linkB3 = ["link name", "/path"]
-- @linkB4 = ["link name", "/path"]
-- @linkB5 = ["link name", "/path"]
+- @pageB= "Partners"
+- @pageB1= "Marketing & Web Design"
+- @pageB2= "Lawyers"
+- @pageB3= "CPAs"
+- @pageB4= "Financial Advisors"
+- @pageB5= "Commercial Contractors"
+- @pageB6= "Technical Writers"
+- @pageB7= "More..."
 
-- @linkC1 = ["link name", "/path"]
-- @linkC2 = ["link name", "/path"]
-- @linkC3 = ["link name", "/path"]
-- @linkC4 = ["link name", "/path"]
-- @linkC5 = ["link name", "/path"]
+- @pageC= "Connect"
+- @pageC1= "Blog"
+- @pageC2= "facebook"
+- @pageC3= "twitter"
+- @pageC4= "Events"
+- @pageC5= "Newsletter Sign-up"
+
+- @pageD= "Home"
+- @pageD1= "About Us"
+- @pageD2= "Disclaimer"
+- @pageD3= "Privacy Statement"
+- @pageD4= "Testimonials"
+
+
+//    Paths
+- @pathA1= "http://www.wanttofranchise.com/menuitem/9052"
+- @pathA2= "http://www.wanttofranchise.com/menuitem/9053"
+- @pathA3= "http://www.wanttofranchise.com/menuitem/9054"
+- @pathA4= "http://www.wanttofranchise.com/menuitem/9055"
+- @pathA5= "http://www.wanttofranchise.com/menuitem/9056"
+- @pathA6= "http://www.wanttofranchise.com/menuitem/9057"
+- @pathA7= "http://www.wanttofranchise.com/menuitem/9058"
+- @pathA8= "http://www.wanttofranchise.com/menuitem/9059"
+- @pathA9= "http://www.wanttofranchise.com/menuitem/9060"
+- @pathA10= "http://www.wanttofranchise.com/menuitem/9062"
+- @pathA11= "http://www.wanttofranchise.com/menuitem/9062"
+- @pathA12= "http://www.wanttofranchise.com/menuitem/9063"
+
+- @pathB1= "/"
+- @pathB2= "/about"
+- @pathB3= "/"
+- @pathB4= "/"
+- @pathB5= "/"
+- @pathB6= "/"
+- @pathB7= "/"
+
+- @pathC1= "/"
+- @pathC2= "http://www.facebook.com/FResourceGroup"
+- @pathC3= "http://www.twitter.com/FResourceGroup"
+- @pathC4= "/"
+- @pathC5= "/"
+
+- @pathD1= "/home#about"
+- @pathD2= "/home#disclaimer"
+- @pathD3= "/home#privacy"
+- @pathD4= "/home#testimonials"
 
 !!! 5
 %html
   %head
-    %title= @sitename + @title + @subtitle
+    %title= @sitename + @title
 
     %link{:href => "/images/favicon.png", :rel => "icon"}
     %link{:href => "/images/appleIcon-1.png", :rel => "apple-touch-icon"}/
@@ -89,7 +136,7 @@
                   controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
                   keyboardNav: true, // Use left & right arrows
                   pauseOnHover: true, // Stop animation while hovering
-                  manualAdvance: false, // Force manual transitions
+                  manualAdvance: true, // Force manual transitions
                   captionOpacity: 1.0, // Universal caption opacity
                   prevText: 'Back', // Prev directionNav text
                   nextText: 'Next', // Next directionNav text
@@ -102,106 +149,175 @@
       });
     
     
-    // DROPDOWN MENU  
-    / :javascript
-    /   $(document).ready(function() {
-    / 
-    / 
-    /     function megaHoverOver(){
-    /       $(this).find(".sub").stop().fadeTo('fast', 1).show();
-    / 
-    /       //Calculate width of all ul's
-    /       (function($) { 
-    /         jQuery.fn.calcSubWidth = function() {
-    /           rowWidth = 0;
-    /           //Calculate row
-    /           $(this).find("ul").each(function() {          
-    /             rowWidth += $(this).width(); 
-    /           }); 
-    /         };
-    /       })(jQuery); 
-    / 
-    /       if ( $(this).find(".row").length > 0 ) { //If row exists...
-    /         var biggestRow = 0; 
-    /         //Calculate each row
-    /         $(this).find(".row").each(function() {                 
-    /           $(this).calcSubWidth();
-    /           //Find biggest row
-    /           if(rowWidth > biggestRow) {
-    /             biggestRow = rowWidth;
-    /           }
-    /         });
-    /         //Set width
-    /         $(this).find(".sub").css({'width' :biggestRow});
-    /         $(this).find(".row:last").css({'margin':'0'});
-    / 
-    /       } else { //If row does not exist...
-    / 
-    /         $(this).calcSubWidth();
-    /         //Set Width
-    /         $(this).find(".sub").css({'width' : rowWidth});
-    / 
-    /       }
-    /     }
-    / 
-    /     function megaHoverOut(){ 
-    /       $(this).find(".sub").stop().fadeTo('fast', 0, function() {
-    /         $(this).hide(); 
-    /       });
-    /     }
-    / 
-    / 
-    /     var config = {    
-    /        sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
-    /        interval: 100, // number = milliseconds for onMouseOver polling interval    
-    /        over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
-    /        timeout: 00, // number = milliseconds delay before onMouseOut    
-    /        out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
-    /     };
-    / 
-    /     $("ul#topnav li .sub").css({'opacity':'0'});
-    /     $("ul#topnav li").hoverIntent(config);
-    / 
-    / 
-    / 
-    /   });
+    / DROPDOWN MENU  
+    :javascript
+      $(document).ready(function() {
+    
+    
+        function megaHoverOver(){
+          $(this).find(".sub").stop().fadeTo('fast', 1).show();
+    
+          //Calculate width of all ul's
+          (function($) { 
+            jQuery.fn.calcSubWidth = function() {
+              rowWidth = 0;
+              //Calculate row
+              $(this).find("ul").each(function() {          
+                rowWidth += $(this).width(); 
+              }); 
+            };
+          })(jQuery); 
+    
+          if ( $(this).find(".row").length > 0 ) { //If row exists...
+            var biggestRow = 0; 
+            //Calculate each row
+            $(this).find(".row").each(function() {                 
+              $(this).calcSubWidth();
+              //Find biggest row
+              if(rowWidth > biggestRow) {
+                biggestRow = rowWidth;
+              }
+            });
+            //Set width
+            $(this).find(".sub").css({'width' :biggestRow});
+            $(this).find(".row:last").css({'margin':'0'});
+    
+          } else { //If row does not exist...
+    
+            $(this).calcSubWidth();
+            //Set Width
+            $(this).find(".sub").css({'width' : rowWidth});
+    
+          }
+        }
+    
+        function megaHoverOut(){ 
+          $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+            $(this).hide(); 
+          });
+        }
+    
+    
+        var config = {    
+           sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+           interval: 100, // number = milliseconds for onMouseOver polling interval    
+           over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+           timeout: 00, // number = milliseconds delay before onMouseOut    
+           out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+        };
+    
+        $("ul#topnav li .sub").css({'opacity':'0'});
+        $("ul#topnav li").hoverIntent(config);
+    
+    
+    
+      });
 
 
   
 
 
   %body{:class => @body_class}
+    #alt-nav
+      %p
+        %a{:href => @pathC1, :target => "_blank"}
+          =@pageC1
+        %a{:href => @pathC2, :target => "_blank"}
+          %img.facebook{:src => "/images/facebook-white.png"}
+        %a{:href => @pathC3, :target => "_blank"}
+          %img.twitter{:src => "/images/twitter-white.png"}
+        %a{:href => @pathA3, :target => "_blank"}
+          =@pageA3
+            
     #header
       .center
         #logo1
           %a{:href => @link1[1]}
             %img{:src => "/images/logo.png", :alt => ""+@sitename+" Logo"}
         %ul#topnav
-          %li
-            %a#one.topnav{:href => @link1[1]}
-              =@link1[0]
+          / %li
+          /   %a#one.topnav{:href => @link1[1]}
+          /     =@link1[0]
           %li
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
             .sub
               %ul
-                / / %li
-                / /   %h2 Header
                 / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
+                /   %h2
+                /     %a{:href => "#"} Header
+                %li
+                  %a{:href => @link2[1]+"#services"} Services
+                %li
+                  %a{:href => @link2[1]+"#levels"} Levels of Investment
+                %li
+                  %a{:href => @link2[1]+"#advantages"} Advantages
+                %li
+                  %a{:href => @link2[1]+"#categories"} Categories
+                %li
+                  %a{:href => @link2[1]+"#financing"} Financing
+                %li
+                  %a{:href => @link2[1]+"#guide"} Guide
+                %li
+                  %a{:href => @link2[1]+"#selecting"} Selecting a Franchise
+                %li
+                  %a{:href => @link2[1]+"#faq"} FAQ
           %li
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
+            .sub
+              %ul
+                / %li
+                /   %h2
+                /     %a{:href => "#"} Header
+                %li
+                  %a{:href => @link3[1]+"#services"} Services
+                %li
+                  %a{:href => @link3[1]+"#evaluation"} Evaluation
+                %li
+                  %a{:href => @link3[1]+"#policies"} Policies & Procedures
+                %li
+                  %a{:href => @link3[1]+"#legal"} Legal
+                %li
+                  %a{:href => @link3[1]+"#develop"} System Development
+                %li
+                  %a{:href => @link3[1]+"#marketing"} Marketing Strategy
+                %li
+                  %a{:href => @link3[1]+"#media"} Digital Media
+                %li
+                  %a{:href => @link3[1]+"#management"} Franchise Management
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
-          %li
-            %a#five.topnav{:href => @link5[1]}
-              =@link5[0]
+            .sub
+              %ul#four
+                %li
+                  %a{:href => @link4[1]+"#sba"} SBA Loan Program
+                %li
+                  %a{:href => @link4[1]+"#acquisition"} Business Acquisition Financing
+                %li
+                  %a{:href => @link4[1]+"#equipmentleasing"} Equipment Leasing
+                %li
+                  %a{:href => @link4[1]+"#ar"} Accounts Receivable Financing
+                %li
+                  %a{:href => @link4[1]+"#contruction"} Construction Equipment Financing
+                %li
+                  %a{:href => @link4[1]+"#repo"} Repossessed Trucking & Construction Equipment
+                %li
+                  %a{:href => @link4[1]+"#unsecured"} Unsecured Business Loans & Lines of Credit
+                %li
+                  %a{:href => @link4[1]+"#church"} Church Financing Program
+                %li
+                  %a{:href => @link4[1]+"#medical"} Medical Working Capital Loans
+                %li
+                  %a{:href => @link4[1]+"#bridge"} Commercial Bridge Loans
+                %li
+                  %a{:href => @link4[1]+"#debt"} Debt Restructuring
+                %li
+                  %a{:href => @link4[1]+"#cashavdance"} Easy Pay Cash Advance
+          / %li
+          /   %a#five.topnav{:href => @link5[1]}
+          /     =@link5[0]
 
 
     .content
@@ -211,35 +327,55 @@
         .content
           &nbsp;
           .column
-            %h4 Group One
-            %a{:href => @linkA1[1]}
-              =@linkA1[0]
-            %a{:href => @linkA2[1]}
-              =@linkA2[0]
-            %a{:href => @linkA3[1]}
-              =@linkA3[0]
-            %a{:href => @linkA4[1]}
-              =@linkA4[0]
+            %h4= @pageD
+            %a{:href => @pathD1} 
+              = @pageD1
+            %a{:href => @pathD2} 
+              = @pageD2
+            %a{:href => @pathD3} 
+              = @pageD3
+            %a{:href => @pathD4} 
+              = @pageD4
           .column
-            %h4 Group Two
-            %a{:href => @linkB1[1]}
-              =@linkB1[0]
-            %a{:href => @linkB2[1]}
-              =@linkB2[0]
-            %a{:href => @linkB3[1]}
-              =@linkB3[0]
-            %a{:href => @linkB4[1]}
-              =@linkB4[0]
+            %h4= @pageA
+            %a{:href => @pathA1, :target => "_blank"} 
+              = @pageA1
+            %a{:href => @pathA5, :target => "_blank"} 
+              = @pageA5
+            %a{:href => @pathA7, :target => "_blank"} 
+              = @pageA7
+            %a{:href => @pathA9, :target => "_blank"} 
+              = @pageA9
+            %a{:href => @pathA12, :target => "_blank"} 
+              = @pageA12
           .column
-            %h4 Group Three
-            %a{:href => @linkC1[1]}
-              =@linkC1[0]
-            %a{:href => @linkC2[1]}
-              =@linkC2[0]
-            %a{:href => @linkC3[1]}
-              =@linkC3[0]
-            %a{:href => @linkC4[1]}
-              =@linkC4[0]  
+            %h4= @pageB
+            %a{:href => @pathB1} 
+              = @pageB1
+            %a{:href => @pathB2} 
+              = @pageB2
+            %a{:href => @pathB3} 
+              = @pageB3
+            %a{:href => @pathB4} 
+              = @pageB4
+            %a{:href => @pathB5} 
+              = @pageB5
+            %a{:href => @pathB6} 
+              = @pageB6
+            %a{:href => @pathB7} 
+              = @pageB7
+          .column
+            %h4= @pageC
+            %a{:href => @pathC1, :target => "_blank"} 
+              = @pageC1
+            %a{:href => @pathC2, :target => "_blank"} 
+              = @pageC2
+            %a{:href => @pathC3, :target => "_blank"} 
+              = @pageC3
+            %a{:href => @pathC4} 
+              = @pageC4    
+            %a{:href => @pathC5} 
+              = @pageC5  
               
                   
     .m3c-bar

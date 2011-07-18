@@ -13,12 +13,12 @@
 		@extend .center-container
 		@extend .box
 		@extend .clearfix
-		font-family: "EmbedFont-1"
+		@extend .font-base
 		margin: 0 auto
 		padding: ($v-gap / 2) 0 $v-gap
 		.content
 			@extent .box
-			@extend .bg-gradient-gray-light
+			@extend .bg-gradient-accent
 			@extend .corner-all
 			@extend .clearfix
 			width: $inside-width
@@ -37,7 +37,7 @@
 				&:last-child
 					border-right: none
 				h4
-					font-family: "EmbedFont-1"
+					@extend .font-base
 					position: relative
 					margin: 0 0 .5em 0
 					color: $footer-text

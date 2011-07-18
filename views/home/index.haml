@@ -1,50 +1,120 @@
 - @title = " | Home"
 - @subtitle = ""
-- @body_class = "one"
+- @body_class = "none"
 
-%link{:href => "stylesheets/body-1.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+- @sub1 = ["About Us", "about"]
+- @sub2 = ["Disclaimer", "disclaimer"]
+- @sub3 = ["Privacy Policy", "privacy"]
+- @sub4 = ["Testimonials", "testimonials"]
 
-#one.image-slider
+%link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#two.banner
   .center
-    #slider-wrapper
-      #slider.nivoSlider
-        %img{:alt => "", :src => "/images/nivo/banner-1-1.jpg", :title => "#caption1"}/
-        %img{:alt => "", :src => "/images/nivo/banner-1-2.jpg", :title => "#caption2"}/
-        %img{:alt => "", :src => "/images/nivo/banner-1-2.jpg", :title => "#caption3"}/
-      #caption1.nivo-html-caption
-        %h1 Slide 1: A clever title.
-        %h3 This is the first impact image the user will see. A brief description of the slide is included to inform the user.
-        %p.link
-          = link_to "Learn More", "/page2"
-      #caption2.nivo-html-caption
-        %h1 Slide 2: Spark an interest.
-        %h3 This slide will feature a product or service that really gets the user interested in the company. Supplemental text prompts the user to act, such as purchasing or reading more.
-        %p.link
-          = link_to "Buy Now", "/page3"
-      #caption3.nivo-html-caption
-        %h1
-          Slide 3: Example of a
-          %br/
-          multi-line descriptive headline
-        %h3 The third slide is much like the second&mdash;it showcases a special aspect of the company. Additional slides may be added.
-        %p.link
-          = link_to "Learn How", "/page4" 
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-1.jpg"}
+
+
 
 .body
   .center
     .content
-      #one.left
-        %a.container{:href => "/page2"}
-          %h1 About Us
-          %h3 Interest-grabber that talks about the company
-          %p.link Learn More  >
-      #one.middle
-        %a.container{:href => "/page3"}
-          %h1 Featured Service
-          %h3 Highlights a key product or service
-          %p.link Discover  >
-      #one.right
-        %a.container{:href => "/page4"}
-          %h1 Sample Gallery
-          %h3 View photos of our products and services
-          %p.link Get Started  >
+      #two.main
+        .content
+          %a{:name => @sub1[1]}
+          .section.no-image
+            %h1=@sub1[0]
+            //this section was approved by Christina
+            %p
+              %b Our services help find the perfect franchise for YOU.
+            %p Now that you have made the decision to become the proprietor of your own business through franchising, the next step is the most important one: Choosing the right franchise.
+            %p There are tens of thousands of franchises available. How do you pick the right one for you?
+            %p Once you have narrowed down your field of interest, selecting a franchise is a process that involves asking many questions, and examining the advantages versus the disadvantages among similar franchising options. 
+            %p All franchisors have media kits that are visually stunning and enticing so that they can present the advantages of their product, but how do you know if they have a strong and reliable business structure and workable system of organization? Choosing a franchise involves proper research and a careful analysis of statistics, company background, business structure and company regulations.
+            %p Franchise Resource Group has decades of experience in the franchising industry, and we fully assist and guide you in making an informed and secure decision that is backed up by real research. FRG has evaluated thousands of available and popular franchises currently on the market, and we have hand-selected every single franchise that is in our portfolio&mdash;that is not something that many other franchising consulting companies can say. 
+            %p We have over 350 franchises in our portfolio, and we have selected them based on long-range, successful performance criteria so that you can be certain that your investment is secure. We pride ourselves on staying current, and we are always evaluating new franchises and emerging trends on the market.
+            
+            
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p Franchise Resource Group is not an agent, employee, representative, or other functionary of the seller of the respective franchises introduced to you. Franchise Resource Group is an Independent Contractor, engaged in the activity of introducing prospective business buyers to sellers of franchises. Franchise Resource Group has not checked the accuracy of the written or web site information provided by the seller, and assumes no responsibility for the acts, errors, or omissions of the seller, or the outcome of any transaction.
+            %p Franchise Resource Group is not qualified to advise in any part of the purchase of a franchise. You are urged to seek professional advice from a lawyer, accountant, or other qualified resource.
+            %p Many Franchisors disclose various earnings claims in their disclosure documents. Franchise Resource Group does not enter into discussions of earnings claims. Any earning claims information shall come directly from the franchise representatives.
+            %p Buying a franchise is a complicated investment. Take your time to decide, and personally visit the headquarters of the company you elect to buy from. Make good, common sense decisions in all investment matters.
+            %p 
+              The Federal Trade Commission regulates the sale of franchises. The FTC has a very user friendly web site, www.FTC.gov. We suggest you use it. Your state may also have laws regarding franchises. Ask your state consumer affairs agencies about them. The
+              %a{:href => "http://www.bbb.org", :target => "_blank"} Better Business Bureau
+              is another excellent information source for potential franchise buyers. www.BBB.com will put you in instant touch with both local and national offices.
+            %p You alone are responsible for researching the franchise you purchase.
+
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p This privacy statement discloses the privacy practices for Franchise Resource Group.  This privacy notice applies solely to information collected by this web site.
+            %p Information Collection, Use, and Sharing: We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you.  We will not sell or rent this information to anyone.  We will use your information to respond to you, regarding the reason you contacted us.  We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, (e.g. to ship an order). Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
+            %p
+              Your Access to and Control over Information: You may opt out of any future contacts from us at any time.  You can do the following at any time by contacting us via telephone at 1-877-402-6101 or via email at 
+              %a{:href => "mailto:info@manceraconsulting.com"} info@manceraconsulting.com:
+              %br
+              &nbsp;&nbsp;&mdash; See what data we have about you, if any.
+              %br
+              &nbsp;&nbsp;&mdash; Change/correct any data we have about you.
+              %br
+              &nbsp;&nbsp;&mdash; Have us delete any data we have about you.
+              %br
+              &nbsp;&nbsp;&mdash; Express any concern you have about our use of your data.
+
+            %p
+              Security: We take precautions to protect your information.  When you submit sensitive information via the website, your information is protected both online and offline. Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way.  You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page. While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information.  The computers/servers in which we store personally identifiable information are kept in a secure environment.  If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at 1-877-402-6101 or via email at
+              %a{:href => "mailto:info@manceraconsulting.com"} info@manceraconsulting.com. 
+            %p Purchases: We request information from you on our purchase form.  To buy from us, you must provide contact information (like name and billing address) and financial information (like credit card number, expiration date).  This information is used for billing purposes.  If we have trouble processing an order, we'll use this information to contact you. LinksThis web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites.  We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.
+
+          %a{:name => @sub4[1]}
+          .section.no-image
+            %h1=@sub4[0]
+            %p 
+              %b John Doe, Company Name
+              %br
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            %p 
+              %b John Doe, Company Name
+              %br
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            %p 
+              %b John Doe, Company Name
+              %br
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              
+      #two.sidebar
+        .subnav
+          %h1 FRG: Home
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub3[1]}
+                =@sub3[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub4[1]}
+                =@sub4[0]
+        .form
+          %h1 Contact Us
+          .contact-form
+            %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "365", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/q7p6z1/", :border => "none"}    
+
+
+

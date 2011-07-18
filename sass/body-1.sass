@@ -27,17 +27,14 @@
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					//background: $accent-color url("/images/home_left.jpg") no-repeat
 			.middle
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					//background: $accent-color url("/images/home_center.jpg") no-repeat
 			.right
 				a.container
 					@extend .container-setup
 					margin: 0
-					//background: $accent-color url("/images/home_right.jpg") no-repeat
 
 
 .container-setup
@@ -49,12 +46,12 @@
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
-	background: $option-bg
+	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 	h1
 		@extend .box
-		font-family: "EmbedFont-1"
+		font-family: "Embed-Helvetica"
 		position: absolute
 		top: ($v-gap * 0.75)
 		left: ($h-gap * 0.75)
@@ -70,7 +67,7 @@
 		position: absolute
 		top: 75px
 		left: ($h-gap * 0.75)
-		margin: 0 76px 12px 0
+		margin: 0 130px 12px 0
 		color: $option-text
 		font-size: 12px
 		font-weight: 200
@@ -90,8 +87,32 @@
 	&:hover
 		text-decoration: none
 		@extend .opaque
+
+//Background Images for multiple pages - use ID names
+
+#one.left
+	h1
+		color: $accent
+	h3
+		margin-right: 145px
+	a.container
+		background: transparent url(/images/one-left.jpg) no-repeat
+#one.middle
+	h3
+		margin-right: 120px
+	a.container
+		background: transparent url(/images/one-middle.jpg) no-repeat
+#one.right
+	h1
+		color: $accent
+		padding-right: 100px
+		//background: $gray-med
+	h3
+		color: $gray-light
+		margin-right: 150px
+	a.container
+		background: transparent url(/images/one-right.jpg) no-repeat
 		
-		
-		
+
 		
 		
