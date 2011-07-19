@@ -147,6 +147,11 @@
 		line-height: 1.7em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
+		a
+			color: $section-link
+			&:hover
+				color: $section-link-hover
+				text-decoration: none
 
 // Button-style sidebar box
 .button
@@ -286,4 +291,9 @@
 	h1, p
 		width: $content-width !important
 		margin-left: 0 !important
+		
+p.page-top
+	text-align: right !important
+	padding-right: ($h-gap /2) !important
+
 

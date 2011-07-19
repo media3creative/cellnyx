@@ -589,6 +589,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .text p:last-child {
   margin-bottom: 15px;
 }
+.text p a {
+  color: #c69a3d;
+}
+.text p a:hover {
+  color: black;
+  text-decoration: none;
+}
 
 .button p.link {
   position: relative;
@@ -716,4 +723,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .no-image h1, .no-image p {
   width: 583px !important;
   margin-left: 0 !important;
+}
+
+p.page-top {
+  text-align: right !important;
+  padding-right: 15px !important;
 }
