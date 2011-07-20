@@ -1,0 +1,168 @@
+- @title = " | Partners"
+- @subtitle = ""
+- @body_class = "none"
+
+- @sub1= ["Marketing & Web Design", "design"]
+- @sub2= ["Lawyers", "law"]
+- @sub3= ["CPAs", "cpa"]
+- @sub4= ["Financial Advisors", "financial"]
+- @sub5= ["Commercial Contractors", "contractors"]
+- @sub6= ["Technical Writers", "writers"]
+- @sub7= ["More...", "more"]
+
+
+%link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#none.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-1.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #none.main
+        .content
+          %a{:name => @sub1[1]}
+          .section.no-image
+            %h1=@sub1[0]
+            %p 
+              %b Media3Creative
+              = " | "
+              %a{:href => "http://www.media3creative.com", :target => "_blank"} Website
+              %br
+              M3C is a revolutionary marketing system the includes all the high-end design services, printed materials, and web design from a top marketing agency at a very affordable price. M3C is structured in a unique way that allows for strategies and concepts never before seen in the marketing industry.
+            
+            
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p 
+              %b Company Name
+              = " | "
+              %a{:href => "http://www.000000000.com", :target => "_blank"} Website
+              %br
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p 
+              %b Company Name
+              = " | "
+              %a{:href => "http://www.000000000.com", :target => "_blank"} Website
+              %br
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %p.page-top
+              %a{:href => "/"+@sub1[1]} Top ^
+
+          %a{:name => @sub4[1]}
+          .section.no-image
+            %h1=@sub4[0]
+            %p 
+              %b Company Name
+              = " | "
+              %a{:href => "http://www.000000000.com", :target => "_blank"} Website
+              %br
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %p.page-top
+              %a{:href => "/"+@sub1[1]} Top ^
+
+          %a{:name => @sub5[1]}
+          .section.no-image
+            %h1=@sub5[0]
+            %p 
+              %b Company Name
+              = " | "
+              %a{:href => "http://www.000000000.com", :target => "_blank"} Website
+              %br
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %p.page-top
+              %a{:href => "/"+@sub1[1]} Top ^
+
+          %a{:name => @sub6[1]}
+          .section.no-image
+            %h1=@sub6[0]
+            %p 
+              %b Company Name
+              = " | "
+              %a{:href => "http://www.000000000.com", :target => "_blank"} Website
+              %br
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %p.page-top
+              %a{:href => "/"+@sub1[1]} Top ^
+
+          %a{:name => @sub7[1]}
+          .section.no-image
+            %h1=@sub7[0]
+            %p 
+              %b Company Name
+              = " | "
+              %a{:href => "http://www.000000000.com", :target => "_blank"} Website
+              %br
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %p.page-top
+              %a{:href => "/"+@sub1[1]} Top ^
+
+              
+      #none.sidebar
+        .subnav
+          %h1 Partners
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub3[1]}
+                =@sub3[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub4[1]}
+                =@sub4[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub5[1]}
+                =@sub5[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub6[1]}
+                =@sub6[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub7[1]}
+                =@sub7[0]
+
+        .text
+          %h1 Contact Us
+          %p 
+            Franchise Resource Group
+            %br
+            7910 Westglen Dr.
+            %br
+            Suite 101
+            %br
+            Houston, TX 77063
+            %br
+            %br
+            1-877-402-6101
+            %br
+            %br
+            %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com
+          %h3 WE ARE HERE TO HELP YOU ACHIEVE YOUR BUSINESS GOALS!
+

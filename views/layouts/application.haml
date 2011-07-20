@@ -55,13 +55,13 @@
 - @pathA11= "http://www.wanttofranchise.com/menuitem/9062"
 - @pathA12= "http://www.wanttofranchise.com/menuitem/9063"
 
-- @pathB1= "/"
-- @pathB2= "/about"
-- @pathB3= "/"
-- @pathB4= "/"
-- @pathB5= "/"
-- @pathB6= "/"
-- @pathB7= "/"
+- @pathB1= ["Marketing & Web Design", "design"]
+- @pathB2= ["Lawyers", "law"]
+- @pathB3= ["CPAs", "cpa"]
+- @pathB4= ["Financial Advisors", "financial"]
+- @pathB5= ["Commercial Contractors", "contractors"]
+- @pathB6= ["Technical Writers", "writers"]
+- @pathB7= ["More...", "more"]
 
 - @pathC1= "/"
 - @pathC2= "http://www.facebook.com/FResourceGroup"
@@ -352,20 +352,20 @@
               = @pageA12
           .column
             %h4= @pageB
-            %a{:href => @pathB1} 
-              = @pageB1
-            %a{:href => @pathB2} 
-              = @pageB2
-            %a{:href => @pathB3} 
-              = @pageB3
-            %a{:href => @pathB4} 
-              = @pageB4
-            %a{:href => @pathB5} 
-              = @pageB5
-            %a{:href => @pathB6} 
-              = @pageB6
-            %a{:href => @pathB7} 
-              = @pageB7
+            %a{:href => "/partners#"+@pathB1[1]} 
+              = @pathB1[0]
+            %a{:href => "/partners#"+@pathB2[1]} 
+              = @pathB2[0]
+            %a{:href => "/partners#"+@pathB3[1]} 
+              = @pathB3[0]
+            %a{:href => "/partners#"+@pathB4[1]} 
+              = @pathB4[0]
+            %a{:href => "/partners#"+@pathB5[1]} 
+              = @pathB5[0]
+            %a{:href => "/partners#"+@pathB6[1]} 
+              = @pathB6[0]
+            %a{:href => "/partners#"+@pathB7[1]} 
+              = @pathB7[0]
           .column
             %h4= @pageC
             %a{:href => @pathC1, :target => "_blank"} 
@@ -385,7 +385,7 @@
     .m3c-bar
       .copyright
         :markdown
-          Copyright &copy; 2011-#{Time.now.year} [#{@sitename}](#). All Rights Reserved.
+          Copyright &copy; 2011-#{Time.now.year} [#{@sitename}](/landing). All Rights Reserved.
       .powered-by
         :markdown
           Powered by [Media 3 Creative](http://media3creative.com/)
