@@ -153,6 +153,7 @@
 				color: $section-link-hover
 				text-decoration: none
 
+
 // Button-style sidebar box
 .button
 	p.link
@@ -291,9 +292,22 @@
 	h1, p
 		width: $content-width !important
 		margin-left: 0 !important
-		
+
+// Top link (sends page to top)		
 p.page-top
 	text-align: right !important
 	padding-right: ($h-gap /2) !important
 
+.youtube   // In regular content
+	@extend .font-base
+	@extend .box
+	width: $content-width
+	margin: 0 auto ($v-gap / 2) $corner-radius
+	padding: 0
 
+.youtube-sm   // In sidebar
+	@extend .font-base
+	@extend .box
+	width: ($option-width - ($h-gap *2))
+	margin: 0 auto ($v-gap / 2)
+	padding: 0

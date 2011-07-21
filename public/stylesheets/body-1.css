@@ -132,24 +132,28 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-topleft: 7px;
   -khtml-border-radius-topleft: 7px;
   -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .corner-top-right {
   -moz-border-radius-topright: 7px;
   -khtml-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .corner-bottom-left {
   -moz-border-radius-bottomleft: 7px;
   -khtml-border-radius-bottomleft: 7px;
   -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .corner-bottom-right {
   -moz-border-radius-bottomright: 7px;
   -khtml-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .corner-top {
@@ -159,6 +163,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-topright: 7px;
   -khtml-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .corner-right {
@@ -168,6 +174,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-bottomright: 7px;
   -khtml-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .corner-bottom {
@@ -177,15 +185,19 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-bottomright: 7px;
   -khtml-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .corner-left {
-  -moz-border-radius-topleft: 7px;
-  -khtml-border-radius-topleft: 7px;
-  -webkit-border-top-left-radius: 7px;
-  -moz-border-radius-bottomleft: 7px;
-  -khtml-border-radius-bottomleft: 7px;
-  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -khtml-border-radius-topright: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -khtml-border-radius-bottomright: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
@@ -195,6 +207,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -ms-border-radius: 7px;
   -khtml-border-radius: 7px;
   border-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .clearfix, .body, .body .center, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
@@ -395,24 +411,28 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-topleft: 7px;
   -khtml-border-radius-topleft: 7px;
   -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .corner-top-right {
   -moz-border-radius-topright: 7px;
   -khtml-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .corner-bottom-left {
   -moz-border-radius-bottomleft: 7px;
   -khtml-border-radius-bottomleft: 7px;
   -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .corner-bottom-right {
   -moz-border-radius-bottomright: 7px;
   -khtml-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .corner-top {
@@ -422,6 +442,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-topright: 7px;
   -khtml-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .corner-right {
@@ -431,6 +453,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-bottomright: 7px;
   -khtml-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .corner-bottom {
@@ -440,15 +464,19 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-border-radius-bottomright: 7px;
   -khtml-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .corner-left {
-  -moz-border-radius-topleft: 7px;
-  -khtml-border-radius-topleft: 7px;
-  -webkit-border-top-left-radius: 7px;
-  -moz-border-radius-bottomleft: 7px;
-  -khtml-border-radius-bottomleft: 7px;
-  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -khtml-border-radius-topright: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -khtml-border-radius-bottomright: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
@@ -458,6 +486,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -ms-border-radius: 7px;
   -khtml-border-radius: 7px;
   border-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .body {

@@ -2,7 +2,7 @@
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/landing"]
-- @link2 = ["Franchise Solutions", "/solutions"]
+- @link2 = ["Franchise Consulting", "/consulting"]
 - @link3 = ["Franchise Development", "/development"]
 - @link4 = ["Financial Services", "/financial"]
 - @link5 = ["Contact", "/page5"]
@@ -11,10 +11,9 @@
 //    Names
 - @pageA= "Resources"
 - @pageA1= "10 Steps to Success"
-- @pageA3= "Franchise FAQ"
-- @pageA5= "Franchising Help"
+- @pageA2= "10 Things to Know"
+- @pageA3= "Franchise Facts"
 - @pageA7= "History of Franchising"
-- @pageA9= "Master Franchising"
 - @pageA12= "Future of Franchising"
 
 - @pageB= "Partners"
@@ -43,8 +42,8 @@
 
 //    Paths
 - @pathA1= "http://www.wanttofranchise.com/menuitem/9052"
-- @pathA2= "http://www.wanttofranchise.com/menuitem/9053"
-- @pathA3= "http://www.wanttofranchise.com/menuitem/9054"
+- @pathA2= "http://www.wanttofranchise.com/menuitem/9048"
+- @pathA3= "http://www.wanttofranchise.com/menuitem/9049"
 - @pathA4= "http://www.wanttofranchise.com/menuitem/9055"
 - @pathA5= "http://www.wanttofranchise.com/menuitem/9056"
 - @pathA6= "http://www.wanttofranchise.com/menuitem/9057"
@@ -228,8 +227,8 @@
           %img.facebook{:src => "/images/facebook-white.png"}
         %a{:href => @pathC3, :target => "_blank"}
           %img.twitter{:src => "/images/twitter-white.png"}
-        %a{:href => @pathA3, :target => "_blank"}
-          =@pageA3
+        %a{:href => @pathC6}
+          =@pageC6
             
     #header
       .center
@@ -342,12 +341,24 @@
             %h4= @pageA
             %a{:href => @pathA1, :target => "_blank"} 
               = @pageA1
-            %a{:href => @pathA5, :target => "_blank"} 
-              = @pageA5
+            %a{:href => @pathA2, :target => "_blank"} 
+              = @pageA2
+            %a{:href => @pathA3, :target => "_blank"} 
+              = @pageA3
+            / %a{:href => @pathA4, :target => "_blank"} 
+            /   = @pageA4
+            / %a{:href => @pathA6, :target => "_blank"} 
+            /   = @pageA6
             %a{:href => @pathA7, :target => "_blank"} 
               = @pageA7
-            %a{:href => @pathA9, :target => "_blank"} 
-              = @pageA9
+            / %a{:href => @pathA8, :target => "_blank"} 
+            /   = @pageA8
+            / %a{:href => @pathA9, :target => "_blank"} 
+            /   = @pageA9
+            / %a{:href => @pathA10, :target => "_blank"} 
+            /   = @pageA10
+            / %a{:href => @pathA11, :target => "_blank"} 
+            /   = @pageA11
             %a{:href => @pathA12, :target => "_blank"} 
               = @pageA12
           .column
@@ -362,8 +373,8 @@
               = @pathB4[0]
             %a{:href => "/partners#"+@pathB5[1]} 
               = @pathB5[0]
-            %a{:href => "/partners#"+@pathB6[1]} 
-              = @pathB6[0]
+            / %a{:href => "/partners#"+@pathB6[1]} 
+            /   = @pathB6[0]
             %a{:href => "/partners#"+@pathB7[1]} 
               = @pathB7[0]
           .column
@@ -379,7 +390,17 @@
             %a{:href => @pathC5} 
               = @pageC5  
             %a{:href => @pathC6} 
-              = @pageC6  
+              = @pageC6
+            %a
+              #fb-root
+                %script{:src => "http://connect.facebook.net/en_US/all.js#xfbml=1"}
+                %fb:like{:font => "", :href => "http://www.franchiseresourcegroup.com", :layout => "button_count", :send => "true", :show_faces => "false", :width => "450"}
+            %a
+              %a.twitter-share-button{"data-count" => "none", "data-url" => "http://www.franchiseresourcegroup.com", :href => "http://twitter.com/share"} Tweet
+            %script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
+
+
+
               
                   
     .m3c-bar
