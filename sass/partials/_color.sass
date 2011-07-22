@@ -22,7 +22,7 @@ $gray-light: #aaa
 // COLOR APPLICATION
 $html-bg:									#fff
 $body-bg:									$html-bg
-$center-container-bg:			transparent
+$center-container-bg:			#fff
 
 $text-dark:								#000
 $text-light:							$gray-med
@@ -88,44 +88,35 @@ $opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
 
 // GRADIENTS
 .bg-gradient-primary
-	background: $primary
-	+linear-gradient(color-stops($primary-light, $primary))	
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($primary-light), to($primary))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $primary-light, $primary)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000)
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000)"
 
 .bg-gradient-reverse
-	background: $primary
-	+linear-gradient(color-stops((lighten($primary-light, 5%)), (lighten($primary, 5%))))
-
-.bg-gradient-dark
-	background: $primary
-	+linear-gradient(color-stops((darken($primary-light, 5%)), (darken($primary, 5%))))
-
-.bg-gradient-left
-	background: $primary
-	+linear-gradient(color-stops($primary, $primary-light), left)
-
-.bg-gradient-secondary
-	background: $secondary
-	+linear-gradient(color-stops($secondary, $secondary-light))
-
-.bg-gradient-secondary-light
-	background: $primary
-	+linear-gradient(color-stops((lighten($secondary, 5%)), (lighten($secondary-light, 5%))))
-
-.bg-gradient-secondary-reverse
-	background: $secondary
-	+linear-gradient(color-stops($secondary-light, $secondary))
-
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#0d0d0d))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, #404040, #0d0d0d)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#404040, endColorstr=#0d0d0d)
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#404040, endColorstr=#0d0d0d)"
+	
 .bg-gradient-accent
-	background: $accent
-	+linear-gradient(color-stops($accent, #fff))	
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($accent), to(#fff))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $accent, #fff)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff)
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff)"
 
-.bg-gradient-gray-light
-	background: $gray-light
-	+linear-gradient(color-stops($gray-light, #fff))
-
-.bg-gradient-gray-dark
-	background: $gray-med
-	+linear-gradient(color-stops($gray-med, $gray-dark))
 
 
 // CURSOR HIGHLIGHTING
