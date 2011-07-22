@@ -221,8 +221,9 @@
   %body{:class => @body_class}
     #alt-nav
       %p
-        %a{:href => @pathC1, :target => "_blank"}
-          =@pageC1
+        / BLOG LINK
+        / %a{:href => @pathC1, :target => "_blank"}
+        /   =@pageC1
         %a{:href => @pathC2, :target => "_blank"}
           %img.facebook{:src => "/images/facebook-white.png"}
         %a{:href => @pathC3, :target => "_blank"}
@@ -379,22 +380,22 @@
               = @pathB7[0]
           .column
             %h4= @pageC
-            %a{:href => @pathC1, :target => "_blank"} 
-              = @pageC1
-            %a{:href => @pathC2, :target => "_blank"} 
-              = @pageC2
-            %a{:href => @pathC3, :target => "_blank"} 
-              = @pageC3
-            %a{:href => @pathC4} 
-              = @pageC4    
-            %a{:href => @pathC5} 
-              = @pageC5  
-            %a{:href => @pathC6} 
-              = @pageC6
+            / %a{:href => @pathC1, :target => "_blank"} 
+            /   = @pageC1
+            / %a{:href => @pathC2, :target => "_blank"} 
+            /   = @pageC2
+            / %a{:href => @pathC3, :target => "_blank"} 
+            /   = @pageC3
+            / %a{:href => @pathC4} 
+            /   = @pageC4    
+            / %a{:href => @pathC5} 
+            /   = @pageC5  
+            / %a{:href => @pathC6} 
+            /   = @pageC6
             %a
               #fb-root
                 %script{:src => "http://connect.facebook.net/en_US/all.js#xfbml=1"}
-                %fb:like{:font => "", :href => "http://www.franchiseresourcegroup.com", :layout => "button_count", :send => "true", :show_faces => "false", :width => "450"}
+                %fb:like{:font => "", :href => "http://www.franchiseresourcegroup.com", :layout => "button_count", :send => "true", :show_faces => "false", :width => "130"}
             %a
               %a.twitter-share-button{"data-count" => "none", "data-url" => "http://www.franchiseresourcegroup.com", :href => "http://twitter.com/share"} Tweet
             %script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
