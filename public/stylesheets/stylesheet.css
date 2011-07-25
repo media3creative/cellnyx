@@ -117,6 +117,10 @@ a:hover, a:active {
   outline: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 ul, ol {
   margin-left: 2em;
 }

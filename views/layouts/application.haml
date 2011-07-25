@@ -32,6 +32,7 @@
 - @pageC4= "Events"
 - @pageC5= "Newsletter Sign-up"
 - @pageC6= "en Espa&ntilde;ol"
+- @pageC7= "Email Page to a Friend"
 
 - @pageD= "Home"
 - @pageD1= "About Us"
@@ -68,6 +69,7 @@
 - @pathC4= "/"
 - @pathC5= "/"
 - @pathC6= "/espanol"
+- @pathC7= "mailto:?Body=Here's a site you might like: http://www.franchiseresourcegroup.com"
 
 - @pathD1= "/home#about"
 - @pathD2= "/home#disclaimer"
@@ -334,12 +336,12 @@
             %h4= @pageD
             %a{:href => @pathD1} 
               = @pageD1
+            %a{:href => @pathD4} 
+              = @pageD4
             %a{:href => @pathD2} 
               = @pageD2
             %a{:href => @pathD3} 
               = @pageD3
-            %a{:href => @pathD4} 
-              = @pageD4
           .column
             %h4= @pageA
             %a{:href => @pathA1, :target => "_blank"} 
@@ -401,6 +403,8 @@
             %a
               %a.twitter-share-button{"data-count" => "none", "data-url" => "http://www.franchiseresourcegroup.com", :href => "http://twitter.com/share"} Tweet
             %script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
+            %a{:href => @pathC7} 
+              = @pageC7
 
 
 

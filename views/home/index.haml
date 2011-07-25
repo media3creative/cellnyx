@@ -3,11 +3,12 @@
 - @body_class = "none"
 
 - @sub1 = ["About Us", "about"]
+- @sub4 = ["Testimonials", "testimonials"]
 - @sub2 = ["Disclaimer", "disclaimer"]
 - @sub3 = ["Privacy Policy", "privacy"]
-- @sub4 = ["Testimonials", "testimonials"]
 
 %link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+%script{:src => "javascripts/expandCollapse.js", :type => "text/javascript"}
 
 
 #two.banner
@@ -28,43 +29,6 @@
             %p Franchise Resource Group is a full-service consulting firm that assists its clients with all aspects of the franchising industry. From choosing a franchise to successfully owning and operating one, FRG understands all of the necessary components of franchising. We bring all of the essential resources together so that our clients are able to find solutions easily as they proceed through each phase of the franchise process. We are proud to be knowledgeable resources for our clients, and we have expert experience in important sectors of the franchising industry: financing and setup, legal, business and operations, sales and marketing.
             
             
-          %a{:name => @sub2[1]}
-          .section.no-image
-            %h1=@sub2[0]
-            %p Franchise Resource Group is not an agent, employee, representative, or other functionary of the seller of the respective franchises introduced to you. Franchise Resource Group is an Independent Contractor, engaged in the activity of introducing prospective business buyers to sellers of franchises. Franchise Resource Group has not checked the accuracy of the written or web site information provided by the seller, and assumes no responsibility for the acts, errors, or omissions of the seller, or the outcome of any transaction.
-            %p Franchise Resource Group is not qualified to advise in any part of the purchase of a franchise. You are urged to seek professional advice from a lawyer, accountant, or other qualified resource.
-            %p Many Franchisors disclose various earnings claims in their disclosure documents. Franchise Resource Group does not enter into discussions of earnings claims. Any earning claims information shall come directly from the franchise representatives.
-            %p Buying a franchise is a complicated investment. Take your time to decide, and personally visit the headquarters of the company you elect to buy from. Make good, common sense decisions in all investment matters.
-            %p 
-              The Federal Trade Commission regulates the sale of franchises. The FTC has a very user friendly web site, www.FTC.gov. We suggest you use it. Your state may also have laws regarding franchises. Ask your state consumer affairs agencies about them. The
-              %a{:href => "http://www.bbb.org", :target => "_blank"} Better Business Bureau
-              is another excellent information source for potential franchise buyers. www.BBB.com will put you in instant touch with both local and national offices.
-            %p You alone are responsible for researching the franchise you purchase.
-
-
-          %a{:name => @sub3[1]}
-          .section.no-image
-            %h1=@sub3[0]
-            %p This privacy statement discloses the privacy practices for Franchise Resource Group.  This privacy notice applies solely to information collected by this web site.
-            %p Information Collection, Use, and Sharing: We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you.  We will not sell or rent this information to anyone.  We will use your information to respond to you, regarding the reason you contacted us.  We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, (e.g. to ship an order). Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
-            %p
-              Your Access to and Control over Information: You may opt out of any future contacts from us at any time.  You can do the following at any time by contacting us via telephone at 1-877-402-6101 or via email at 
-              %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com:
-              %br
-              &nbsp;&nbsp;&mdash; See what data we have about you, if any.
-              %br
-              &nbsp;&nbsp;&mdash; Change/correct any data we have about you.
-              %br
-              &nbsp;&nbsp;&mdash; Have us delete any data we have about you.
-              %br
-              &nbsp;&nbsp;&mdash; Express any concern you have about our use of your data.
-
-            %p
-              Security: We take precautions to protect your information.  When you submit sensitive information via the website, your information is protected both online and offline. Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way.  You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page. While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information.  The computers/servers in which we store personally identifiable information are kept in a secure environment.  If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at 1-877-402-6101 or via email at
-              %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com. 
-            %p Purchases: We request information from you on our purchase form.  To buy from us, you must provide contact information (like name and billing address) and financial information (like credit card number, expiration date).  This information is used for billing purposes.  If we have trouble processing an order, we'll use this information to contact you.
-            %p Links: This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites.  We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.
-
           %a{:name => @sub4[1]}
           .section.no-image
             %h1=@sub4[0]
@@ -84,6 +48,52 @@
               %br
               %sup Franchise Licensing Manager, Rita's Italian Ice Franchise
 
+
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p Franchise Resource Group is not an agent, employee, representative, or other functionary of the seller of the respective franchises introduced to you. Franchise Resource Group is an Independent Contractor, engaged in the activity of introducing prospective business buyers to sellers of franchises. Franchise Resource Group has not checked the accuracy of the written or web site information provided by the seller, and assumes no responsibility for the acts, errors, or omissions of the seller, or the outcome of any transaction.
+            %p
+              %a{:onclick => "return toggleMe('hide1')"} Expand for more
+            #hide1{:style => "display:none"}
+              %p Franchise Resource Group is not qualified to advise in any part of the purchase of a franchise. You are urged to seek professional advice from a lawyer, accountant, or other qualified resource.
+              %p Many Franchisors disclose various earnings claims in their disclosure documents. Franchise Resource Group does not enter into discussions of earnings claims. Any earning claims information shall come directly from the franchise representatives.
+              %p Buying a franchise is a complicated investment. Take your time to decide, and personally visit the headquarters of the company you elect to buy from. Make good, common sense decisions in all investment matters.
+              %p 
+                The Federal Trade Commission regulates the sale of franchises. The FTC has a very user friendly web site, www.FTC.gov. We suggest you use it. Your state may also have laws regarding franchises. Ask your state consumer affairs agencies about them. The
+                %a{:href => "http://www.bbb.org", :target => "_blank"} Better Business Bureau
+                is another excellent information source for potential franchise buyers. www.BBB.com will put you in instant touch with both local and national offices.
+              %p You alone are responsible for researching the franchise you purchase.
+
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p This privacy statement discloses the privacy practices for Franchise Resource Group.  This privacy notice applies solely to information collected by this web site.
+            %p
+              %a{:onclick => "return toggleMe('hide2')"} Expand for more
+            #hide2{:style => "display:none"}
+              %p Information Collection, Use, and Sharing: We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you.  We will not sell or rent this information to anyone.  We will use your information to respond to you, regarding the reason you contacted us.  We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, (e.g. to ship an order). Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
+              %p
+                Your Access to and Control over Information: You may opt out of any future contacts from us at any time.  You can do the following at any time by contacting us via telephone at 1-877-402-6101 or via email at 
+                %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com:
+                %br
+                &nbsp;&nbsp;&mdash; See what data we have about you, if any.
+                %br
+                &nbsp;&nbsp;&mdash; Change/correct any data we have about you.
+                %br
+                &nbsp;&nbsp;&mdash; Have us delete any data we have about you.
+                %br
+                &nbsp;&nbsp;&mdash; Express any concern you have about our use of your data.
+
+              %p
+                Security: We take precautions to protect your information.  When you submit sensitive information via the website, your information is protected both online and offline. Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way.  You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page. While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information.  The computers/servers in which we store personally identifiable information are kept in a secure environment.  If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at 1-877-402-6101 or via email at
+                %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com. 
+              %p Purchases: We request information from you on our purchase form.  To buy from us, you must provide contact information (like name and billing address) and financial information (like credit card number, expiration date).  This information is used for billing purposes.  If we have trouble processing an order, we'll use this information to contact you.
+              %p Links: This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites.  We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.
+
+
+
               
       #two.sidebar
         .subnav
@@ -96,6 +106,11 @@
           .link
             %h5 
             %p
+              %a{:href => "#"+@sub4[1]}
+                =@sub4[0]
+          .link
+            %h5 
+            %p
               %a{:href => "#"+@sub2[1]}
                 =@sub2[0]
           .link
@@ -103,15 +118,12 @@
             %p
               %a{:href => "#"+@sub3[1]}
                 =@sub3[0]
-          .link
-            %h5 
-            %p
-              %a{:href => "#"+@sub4[1]}
-                =@sub4[0]
         .text
           %h1 Contact Us
           %p 
             Franchise Resource Group
+            = " | "
+            %a{:href => "http://maps.google.com/maps?q=7910+Westglen+Dr.+Suite+101+Houston,+TX+77009&hl=en&sll=37.0625,-95.677068&sspn=76.273886,88.59375&z=17", :target => "_blank"} MAP
             %br
             7910 Westglen Dr.
             %br
@@ -121,7 +133,6 @@
             %br
             %br
             1-877-402-6101
-            %br
             %br
             %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com
           %h3 WE ARE HERE TO HELP YOU ACHIEVE YOUR BUSINESS GOALS!
