@@ -39,6 +39,7 @@
 - @pageD2= "Disclaimer"
 - @pageD3= "Privacy Statement"
 - @pageD4= "Testimonials"
+- @pageD5= "Sitemap"
 
 
 //    Paths
@@ -75,6 +76,7 @@
 - @pathD2= "/home#disclaimer"
 - @pathD3= "/home#privacy"
 - @pathD4= "/home#testimonials"
+- @pathD5= "/sitemap"
 
 !!! 5
 %html
@@ -342,6 +344,8 @@
               = @pageD2
             %a{:href => @pathD3} 
               = @pageD3
+            %a{:href => @pathD5} 
+              = @pageD5
           .column
             %h4= @pageA
             %a{:href => @pathA1, :target => "_blank"} 
@@ -372,16 +376,16 @@
               = @pathB1[0]
             %a{:href => "/partners#"+@pathB2[1]} 
               = @pathB2[0]
-            %a{:href => "/partners#"+@pathB3[1]} 
-              = @pathB3[0]
-            %a{:href => "/partners#"+@pathB4[1]} 
-              = @pathB4[0]
+            / %a{:href => "/partners#"+@pathB3[1]} 
+            /   = @pathB3[0]
+            / %a{:href => "/partners#"+@pathB4[1]} 
+            /   = @pathB4[0]
             %a{:href => "/partners#"+@pathB5[1]} 
               = @pathB5[0]
             / %a{:href => "/partners#"+@pathB6[1]} 
             /   = @pathB6[0]
-            %a{:href => "/partners#"+@pathB7[1]} 
-              = @pathB7[0]
+            / %a{:href => "/partners#"+@pathB7[1]} 
+            /   = @pathB7[0]
           .column
             %h4= @pageC
             / %a{:href => @pathC1, :target => "_blank"} 

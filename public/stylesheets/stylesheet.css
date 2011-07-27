@@ -456,6 +456,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: oblique;
+}
+
 .font-helvetica, .font-base, body, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

@@ -3,16 +3,16 @@
 - @body_class = "none"
 
 - @sub1 = ["en Espa&ntilde;ol", "/espanol"]
-- @sub2 = ["Franchise Resource Group le puede ayudara", "ayudar"]
+- @sub2 = ["Franchise Resource Group le puede ayudar a", "ayudar"]
 - @sub3 = ["Nuestra Propuesta", "propuesta"]
 - @sub4 = ["Lista de Servicios", "lista"]
 - @sub5 = ["Nuestro Proceso", "proceso"]
-- @sub6 = ["Servicios", "servicios"]
+- @sub6 = ["Servicios a Empresas y Clientes Internacionales", "servicios"]
 
 %link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
 
-#two.banner
+#esp.banner
   .center
     .content
       %img.banner{:alt => "", :src => "/images/banner-esp.jpg"}
@@ -22,12 +22,12 @@
 .body
   .center
     .content
-      #two.main
+      #esp.main
         .content
           %a{:name => @sub1[1]}
           .section.no-image
             %h1=@sub1[0]
-            %p La franquicia es uno de los sistemas empresariales que m&aacute;s ha crecido en los &uacute;ltimos a&ntilde;os. La franquicia aporta numerosos beneficios a los emprendedores, pero igualmente implica una serie de contraprestaciones econ&oacute;micas, as&iacute; como una serie de obligaciones que se deben asumir. Por ello, conocer bien sus caracter&iacute;sticas, claves y funcionamiento es esencial a la hora de decidirse por entrar a formar parte de esta f&oacute;rmula empresarial.            
+            %p La franquicia es uno de los sistemas empresariales que m&aacute;s ha crecido en los &uacute;ltimos a&ntilde;os. La franquicia aporta numerosos beneficios a los emprendedores, pero igualmente implica una serie de contraprestaciones econ&oacute;micas, as&iacute; como una serie de obligaciones que se deben asumir. Por ello, conocer bien sus caracter&iacute;sticas, claves y funcionamiento es esencial a la hora de decidirse entrar a formar parte de esta f&oacute;rmula empresarial.            
             
           %a{:name => @sub2[1]}
           .section.no-image
@@ -41,7 +41,7 @@
               %br
               &mdash; Trasladarse a los Estados Unidos o Canad&aacute; con visa de inversionista
               %br
-              &mdash; Montar una franquicia de renombre internacional en el pa&iacute;s donde usted reside
+              &mdash; Establecer una franquicia de renombre internacional en el pa&iacute;s donde usted reside
 
 
           %a{:name => @sub3[1]}
@@ -101,19 +101,15 @@
             %p
               %b Clientes internacionales:
               %br
-              &mdash; Establecimiento de sucursal en los E.U. o incorporacion de su nuevo negocio
+              &mdash; Establecimiento de sucursal en los E.U. o incorporacion de su nuevo negocio*
               %br
               &mdash; Estrategia de Mercadeo y Ventas
               %br
               &mdash; Estudio del costo y ganancias
               %br
-              &mdash; Visas de negocios o inversionistas para los due&ntilde;os y empleados ejecutivos de la empresa
-
-            
-
-          .section.no-image
+              &mdash; Visas de negocios o inversionistas para los due&ntilde;os y empleados ejecutivos de la empresa*
             %p
-              %b * Trabajamos mano a mano con expertos para asistir a nuestros clientes en todos los aspectos empresariales.
+              %i * Trabajamos mano a mano con expertos para asistir a nuestros clientes en todos los aspectos empresariales.
             %p
               De antemano agradecemos la confianza que tiene al contactarnos.
               %br
@@ -134,9 +130,9 @@
             
 
               
-      #two.sidebar
+      #esp.sidebar
         .subnav
-          %h1 Franchise Resource Group
+          %h1 Franchise Resource Group le puede ayudar a
           .link
             %h5 
             %p
@@ -169,7 +165,7 @@
                 =@sub6[0]
 
         .text
-          %h1 Contacte con Nosotros
+          %h1 CONTACTENOS
           %p 
             Franchise Resource Group
             = " | "

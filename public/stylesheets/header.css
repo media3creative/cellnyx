@@ -210,6 +210,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: oblique;
+}
+
 .font-helvetica, .font-base, ul#topnav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

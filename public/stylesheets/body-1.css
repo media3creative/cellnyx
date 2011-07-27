@@ -210,6 +210,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: oblique;
+}
+
 .font-helvetica, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

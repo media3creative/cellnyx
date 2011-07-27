@@ -210,6 +210,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: oblique;
+}
+
 .font-helvetica, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .youtube, .youtube-sm, .link, .main, .main .content .section p, .main .content .main p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -638,4 +642,8 @@ p.page-top {
   width: 220px;
   margin: 0 auto 15px;
   padding: 0;
+}
+
+#esp.sidebar .subnav h1 {
+  font-size: 17px;
 }
