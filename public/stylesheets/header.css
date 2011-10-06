@@ -1,4 +1,4 @@
-.font-helvetica, .font-base, ul#topnav {
+.font-helvetica, .font-base {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -18,11 +18,11 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, #header .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8aa8b4), to(#547684));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #333333, black);
+  background: -moz-linear-gradient(top, #8aa8b4, #547684);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000);
   /* For Internet Explorer 8 */
@@ -42,9 +42,9 @@
 
 .bg-gradient-accent {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef1f3), to(white));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #efefef, white);
+  background: -moz-linear-gradient(top, #eef1f3, white);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
   /* For Internet Explorer 8 */
@@ -170,16 +170,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 0;
   background: white;
+  border-left: 1px solid #c8d3d7;
+  border-right: 1px solid #c8d3d7;
 }
 
-.box, .center-container, #header .center, #header, #header .center #logo1 {
+.box, .center-container, #header .center, #header, ul#topnav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.opaque, #header .center #logo1 a:hover {
+.opaque {
   opacity: 0.85;
   filter: alpha(opacity=85);
 }
@@ -214,7 +216,7 @@ i {
   font-style: oblique;
 }
 
-.font-helvetica, .font-base, ul#topnav {
+.font-helvetica, .font-base {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -234,11 +236,11 @@ i {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, #header .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8aa8b4), to(#547684));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #333333, black);
+  background: -moz-linear-gradient(top, #8aa8b4, #547684);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000);
   /* For Internet Explorer 8 */
@@ -258,9 +260,9 @@ i {
 
 .bg-gradient-accent {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef1f3), to(white));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #efefef, white);
+  background: -moz-linear-gradient(top, #eef1f3, white);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
   /* For Internet Explorer 8 */
@@ -364,46 +366,31 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 #header {
   width: 100%;
-  height: 80px;
+  height: 37px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #444444;
-}
-#header .center #logo1 {
-  position: absolute;
-  top: 15px;
-  left: 35px;
-  margin: 0;
-}
-#header .center #logo1 a {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-#header .center #logo1 a img {
-  width: 270px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  border: 0;
   background: transparent;
 }
 
 ul#topnav {
+  font-family: "EmbedFont-1";
   display: inline;
   float: left;
-  margin: 20px 30px 0 325px;
-  padding: 0;
+  margin: -5px 0 0 300px;
+  padding: 0 30px 0 150px;
+  width: 625px;
+  height: 37px;
   font-size: 11px;
   letter-spacing: 0.05em;
   list-style: none;
+  background: url(/images/bg-nav.png) no-repeat;
   z-index: 50;
 }
 
 ul#topnav li {
   position: relative;
   display: inline;
-  float: left;
+  float: right;
   margin: 0;
   padding: 0;
 }
@@ -425,17 +412,21 @@ ul#topnav a.topnav {
   -ms-border-radius: 7px;
   -khtml-border-radius: 7px;
   border-radius: 7px;
-  margin: 6px -1px 0 0;
+  margin: 5px -1px 0 0;
   padding: 6px 1.7em;
-  color: #aaaaaa;
+  color: white;
   font-size: 12px;
   font-weight: 200;
   text-align: center;
+  text-transform: uppercase;
+  border: 1px solid transparent;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
   color: white;
-  background: black;
+  background: #547684;
+  border-right: 1px solid #abbbc1;
+  border-bottom: 1px solid #abbbc1;
 }
 
 ul#topnav li .sub {
@@ -445,9 +436,9 @@ ul#topnav li .sub {
   float: left;
   top: 30px;
   left: 1px;
-  background: black;
+  background: #4a6874;
   padding: 5px 1em 6px 1em;
-  border-top: 3px solid #c69a3d;
+  border-top: 3px solid #abbbc1;
   border-bottom: 1px solid #171717;
   border-right: 1px solid #171717;
   z-index: 50;
@@ -500,11 +491,13 @@ ul#topnav .sub ul li a:hover {
 ul#topnav .sub ul li h2 {
   margin: 0 0 0.5em 0;
   padding: 0;
-  color: #c69a3d;
+  color: #abbbc1;
   font-size: 11px;
   font-weight: bolder;
 }
 
 .navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three {
   color: white;
+  background: #547684;
+  border-bottom: 1px solid #c8d3d7;
 }

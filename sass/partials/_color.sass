@@ -3,16 +3,16 @@
 @import compass/css3
 
 // COLOR DEFINITIONS
-$primary: #000
+$primary: #547684
 $primary-light: lighten(adjust-hue($primary, 0%), +20)
 $primary-dark: darken($primary, +5)
-$secondary: #c69a3d
+$secondary: #abbbc1
 $secondary-light: lighten(adjust-hue($secondary, 0%), +10)
 $secondary-dark: darken($secondary, +5)
-$accent: #efefef
+$accent: #eef1f3
 $apple-highlight:	#b4d5ff
 
-$line-color: #dadada
+$line-color: #efefef
 
 $gray-dark: #171717
 $gray-med: #444
@@ -20,7 +20,7 @@ $gray-light: #aaa
 
 
 // COLOR APPLICATION
-$html-bg:									#fff
+$html-bg:									$accent
 $body-bg:									$html-bg
 $center-container-bg:			#fff
 
@@ -34,7 +34,7 @@ $header-link:							$secondary
 $header-link-hover:				#000
 $header-border:						$gray-med
 
-$nav-text:								#aaa
+$nav-text:								#fff
 $nav-text-hover:					#fff
 $nav-lines:								$primary-dark
 $nav-bg:									transparent
@@ -74,10 +74,10 @@ $footer-link-hover:				$primary-light
 $footer-border:						$line-color
 
 $m3c-bg:									$secondary
-$m3c-border:							$secondary-dark
-$m3c-text:								#fff
-$m3c-link:								$primary
-$m3c-link-hover:					#fff
+$m3c-border:							$primary
+$m3c-text:								$primary
+$m3c-link:								#fff
+$m3c-link-hover:					$primary
 $m3c-link-border:					$line-color
 
 $opacity:									0.85

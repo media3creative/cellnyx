@@ -8,111 +8,177 @@
 @import partials/color
 @import partials/corners
 
+
 .body
 	@extend .box
 	@extend .clearfix
 	position: relative
 	width: 100%
+	height: 3000px
 	margin: 0 auto
 	.center
 		@extend .center-container
 		@extend .clearfix
-		padding: ($v-gap/2) 0
-		.content
-			@extent .box
-			width: $inside-width
-			margin: 0 auto
+		padding: 50px 0
+		img.logo
+			position: relative
+			width: $logoW
+			height: $logoH
+			top: -70px
+			margin: 0 0 0 $h-gap*2
 			padding: 0
-			.left
-				a.container
-					@extend .container-setup
-					margin: 0px ($h-gap - 1) 0 0
-			.middle
-				a.container
-					@extend .container-setup
-					margin: 0px ($h-gap - 1) 0 0
-			.right
-				a.container
-					@extend .container-setup
-					margin: 0
+		
 
+// Formatting for all sidebar boxes
+.sidebar
+	@extend .box
+	@extend .clearfix
+	position: relative
+	clear: none
+	width: $sidebar-width
+	
+.sidebar.left
+	+float-left
+	margin: 0 $h-gap $v-gap 0
+
+.sidebar.right
+	+float-right
+	margin: 0 0 $v-gap $h-gap
+	
+
+
+.main
+	@extend .section
+	@extend .box
+	@extend .font-helvetica
+	position: relative
+	+float-left
+	width: $content-width
+	.content
+		@extend .box
+		position: relative
+		width: $content-width !important
+		padding-left: ($h-gap/2)
+		border-left: 3px solid $secondary
+
+#section
+	@extend .box
+	@extend .clearfix
+	position: relative
+	padding: 0
+	.title
+		@extend .box
+		@extend .clearfix
+		position: relative
+		width: 100%
+		padding: 0
+		border-bottom: 1px solid $line-color
+		.details
+			position: relative
+			+float-left
+			clear: left
+			width: 400px
+			margin: 0 0 3px 0
+			h1
+				font-family: "EmbedFont-1"
+				margin: 0
+				padding: 0
+				color: $primary
+				font-size: 28px
+				font-weight: 100
+				text-transform: uppercase
+	.item
+		@extend .box
+		@extend .clearfix
+		position: relative
+		width: 100%
+		padding: 20px 0
+		border-bottom: 1px solid $line-color
+		&:first-child
+			padding-top: 0px
+		&:last-child
+			border-bottom: none
+		.details
+			position: relative
+			+float-left
+			clear: left
+			width: 400px
+			margin: 0
+			h3
+				font-family: "EmbedFont-1"
+				margin: 0
+				padding: 0
+				color: $primary
+				font-size: 20px
+				font-weight: 100
+			p
+				font-family: "EmbedFont-1"
+				margin: 0
+				padding: 0
+				color: $primary
+				font-size: 13px
+				font-weight: 100
+		.price
+			position: relative
+			+float-left
+			clear: right
+			width: 80px
+			margin: 5px 0 0 0
+			h2
+				font-family: "EmbedFont-1"
+				margin: 0
+				padding: 0
+				color: $primary
+				font-size: 22px
+				font-weight: 100
+				text-align: right
+		.button
+			position: relative
+			+float-left
+			clear: left
+			width: 400px
+			img
+				width: 120px
+				height: 26px
+				
+span.small
+	font-family: "EmbedFont-2" !important
+	font-size: 70%
+	text-transform: uppercase
 
 .container-setup
 	@extend .box
 	@extend .corner-all
-	@extend .font-helvetica
 	@extend .clearfix
 	position: relative
 	+float-left
-	width: (($inside-width - ($h-gap * 2)) / 3)
-	height: $option-height
-	//background: $option-bg
+	clear: both
+	width: $sidebar-width
+	margin: 0 0 $v-gap 0
+	background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
-	h1
-		@extend .box
-		font-family: "Embed-Helvetica"
-		position: absolute
-		top: ($v-gap * 0.75)
-		left: ($h-gap * 0.75)
-		margin: 0 ($h-gap * 0.75) 0 0
-		color: $option-title
-		font-size: 24px
-		font-weight: 100
-		word-spacing: .1em
-		letter-spacing: .05em
-	h3
-		@extend .box
-		@extend .font-base
-		position: absolute
-		top: 75px
-		left: ($h-gap * 0.75)
-		margin: 0 130px 12px 0
-		color: $option-text
-		font-size: 12px
-		font-weight: 200
-		line-height: 1.3em
-	p.link
-		@extend .box
-		@extend .corner-all
-		@extend .font-base
-		position: absolute
-		bottom: ($v-gap * 0.5)
-		left: ($h-gap * 0.75)
-		display: inline
-		color: $option-link
-		font-size: 11px
-		font-weight: 200
-		text-decoration: none
-	&:hover
-		text-decoration: none
-		@extend .opaque
 
-//Background Images for multiple pages - use ID names
+.columns
+	@extend .clearfix
+	width: 100%
+	.colL
+		position: relative
+		+float-left
+		clear: left
+		width: (($content-width - $h-gap) / 2)
+		margin: 0 $h-gap 0 0
+	.colR
+		position: relative
+		+float-left
+		clear: right
+		width: (($content-width - $h-gap) / 2)
+		margin: 0
 
-#one.left
-	h1
-		color: $accent
-	h3
-		margin-right: 145px
-	a.container
-		background: transparent url(/images/one-left.jpg) no-repeat
-#one.middle
-	h3
-		margin-right: 120px
-	a.container
-		background: transparent url(/images/one-middle.jpg) no-repeat
-#one.right
-	h1
-		color: $accent
-		padding-right: 100px
-		//background: $gray-med
-	h3
-		color: $accent
-		margin-right: 150px
-	a.container
-		background: transparent url(/images/one-right.jpg) no-repeat
-		
 
-		
-		
+
+// Needed to add dotted line between page sections
+.spacer
+	@extend .clearfix
+	width: $content-width
+	margin-bottom: ($v-gap)

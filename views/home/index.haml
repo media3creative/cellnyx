@@ -2,149 +2,52 @@
 - @subtitle = ""
 - @body_class = "none"
 
-- @sub1 = ["About Us", "about"]
-- @sub4 = ["Testimonials", "testimonials"]
-- @sub2 = ["Disclaimer", "disclaimer"]
-- @sub3 = ["Privacy Policy", "privacy"]
 
-%link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
-%script{:src => "javascripts/expandCollapse.js", :type => "text/javascript"}
-
-
-#two.banner
-  .center
-    .content
-      %img.banner{:alt => "", :src => "/images/banner-1.jpg"}
-
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
 
 .body
   .center
     .content
-      #two.main
+      .sidebar.left
+        %img.logo{:src => "/images/logo.png", :alt => "Cellnyx Logo"}
+        
+
+      .main
         .content
-          %a{:name => @sub1[1]}
-          .section.no-image
-            %h1=@sub1[0]
-            %p Franchise Resource Group is a full-service consulting firm that assists its clients with all aspects of the franchising industry. From choosing a franchise to successfully owning and operating one, FRG understands all of the necessary components of franchising. We bring all of the essential resources together so that our clients are able to find solutions easily as they proceed through each phase of the franchise process. We are proud to be knowledgeable resources for our clients, and we have expert experience in important sectors of the franchising industry: financing and setup, legal, business and operations, sales and marketing.
+          #products
+            .item
+              .details
+                %h1
+                  %span.thin Can
+                  Scan
+                %p Shows propensity for developing cancer
+              .price
+                %h2 $999
+              .button
+                %a{:href => "#"}
+                  %img{:src => "/images/btn_cart_LG.gif"}
+            .item
+              .details
+                %h1
+                  %span.thin Can
+                  Screen
+                %p Reports if a patient has cancer
+              .price
+                %h2 $1,999
+              .button
+                %a{:href => "#"}
+                  %img{:src => "/images/btn_cart_LG.gif"}
+            .item
+              .details
+                %h1
+                  %span.thin Can
+                  Solution
+                %p Identifies which treatment is the best for a patient with cancer
+              .price
+                %h2 $2,999
+              .button
+                %a{:href => "#"}
+                  %img{:src => "/images/btn_cart_LG.gif"}
             
-            
-          %a{:name => @sub4[1]}
-          .section.no-image
-            %h1=@sub4[0]
-            .youtube
-              %iframe{:allowfullscreen => "", :frameborder => "0", :height => "349", :src => "http://www.youtube.com/embed/30y_5pIqa9c", :width => "560"}
-
-            %p 
-              "We have enjoyed working with Franchise Resource Group in the Houston market. They are professional and focused on helping the entrepreneur find the right opportunity."
-              %br
-              %b Denise Upchurch 
-              %br
-              %sup Franchise Expansion, Servpro Industries, Inc.
-            %p 
-              "Franchise Resource Group is always bringing Rita's wonderful prospective franchise partners.  They have helped us award franchises and brought new family members to Rita's.  They are always responsive and help guide clients through our investigating process.  Most consultants leave everything up to the Franchisor but Marisol has been there every step of the way."
-              %br
-              %b Gina Moughty 
-              %br
-              %sup Franchise Licensing Manager, Rita's Italian Ice Franchise
-            %p 
-              "Franchise Resource Group's consultants are so very efficient!  Great follow up and follow through! It is a pleasure to work with them."
-              %br
-              %b Howard Levine 
-              %br
-              %sup President & CEO, Americlean Dry Cleaning Centers, Inc.
-
-
-          %a{:name => @sub2[1]}
-          .section.no-image
-            %h1=@sub2[0]
-            %p Franchise Resource Group is not an agent, employee, representative, or other functionary of the seller of the respective franchises introduced to you. Franchise Resource Group is an Independent Contractor, engaged in the activity of introducing prospective business buyers to sellers of franchises. Franchise Resource Group has not checked the accuracy of the written or web site information provided by the seller, and assumes no responsibility for the acts, errors, or omissions of the seller, or the outcome of any transaction.
-            %p
-              %a{:onclick => "return toggleMe('hide1')"} Learn More
-            #hide1{:style => "display:none"}
-              %p Franchise Resource Group is not qualified to advise in any part of the purchase of a franchise. You are urged to seek professional advice from a lawyer, accountant, or other qualified resource.
-              %p Many Franchisors disclose various earnings claims in their disclosure documents. Franchise Resource Group does not enter into discussions of earnings claims. Any earning claims information shall come directly from the franchise representatives.
-              %p Buying a franchise is a complicated investment. Take your time to decide, and personally visit the headquarters of the company you elect to buy from. Make good, common sense decisions in all investment matters.
-              %p 
-                The Federal Trade Commission regulates the sale of franchises. The FTC has a very user friendly web site, www.FTC.gov. We suggest you use it. Your state may also have laws regarding franchises. Ask your state consumer affairs agencies about them. The
-                %a{:href => "http://www.bbb.org", :target => "_blank"} Better Business Bureau
-                is another excellent information source for potential franchise buyers. www.BBB.com will put you in instant touch with both local and national offices.
-              %p You alone are responsible for researching the franchise you purchase.
-              %p 
-                %sub
-                  Images used on this site are from
-                  %a{:href => "http://www.shutterstock.com", :target => "_blank"} shutterstock.com.
-                  Company logos are trademarks/servicemarks of their respective companies.
-
-
-          %a{:name => @sub3[1]}
-          .section.no-image
-            %h1=@sub3[0]
-            %p This privacy statement discloses the privacy practices for Franchise Resource Group.  This privacy notice applies solely to information collected by this web site.
-            %p
-              %a{:onclick => "return toggleMe('hide2')"} Learn More
-            #hide2{:style => "display:none"}
-              %p Information Collection, Use, and Sharing: We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you.  We will not sell or rent this information to anyone.  We will use your information to respond to you, regarding the reason you contacted us.  We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, (e.g. to ship an order). Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
-              %p
-                Your Access to and Control over Information: You may opt out of any future contacts from us at any time.  You can do the following at any time by contacting us via telephone at 1-877-402-6101 or via email at 
-                %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com:
-                %br
-                &nbsp;&nbsp;&mdash; See what data we have about you, if any.
-                %br
-                &nbsp;&nbsp;&mdash; Change/correct any data we have about you.
-                %br
-                &nbsp;&nbsp;&mdash; Have us delete any data we have about you.
-                %br
-                &nbsp;&nbsp;&mdash; Express any concern you have about our use of your data.
-
-              %p
-                Security: We take precautions to protect your information.  When you submit sensitive information via the website, your information is protected both online and offline. Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way.  You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page. While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information.  The computers/servers in which we store personally identifiable information are kept in a secure environment.  If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at 1-877-402-6101 or via email at
-                %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com. 
-              %p Purchases: We request information from you on our purchase form.  To buy from us, you must provide contact information (like name and billing address) and financial information (like credit card number, expiration date).  This information is used for billing purposes.  If we have trouble processing an order, we'll use this information to contact you.
-              %p Links: This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites.  We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.
-
-
-
-              
-      #two.sidebar
-        .subnav
-          %h1 FRG: Home
-          .link
-            %h5 
-            %p
-              %a{:href => "#"+@sub1[1]}
-                =@sub1[0]
-          .link
-            %h5 
-            %p
-              %a{:href => "#"+@sub4[1]}
-                =@sub4[0]
-          .link
-            %h5 
-            %p
-              %a{:href => "#"+@sub2[1]}
-                =@sub2[0]
-          .link
-            %h5 
-            %p
-              %a{:href => "#"+@sub3[1]}
-                =@sub3[0]
-        .text
-          %h1 Contact Us
-          %p 
-            Franchise Resource Group
-            = " | "
-            %a{:href => "http://maps.google.com/maps?q=7910+Westglen+Dr.+Suite+101+Houston,+TX+77009&hl=en&sll=37.0625,-95.677068&sspn=76.273886,88.59375&z=17", :target => "_blank"} MAP
-            %br
-            7910 Westglen Dr.
-            %br
-            Suite 101
-            %br
-            Houston, TX 77063
-            %br
-            %br
-            1-877-402-6101
-            %br
-            %a{:href => "mailto:info@franchiseresourcegroup.com"} info@franchiseresourcegroup.com
-          %h3 WE ARE HERE TO HELP YOU ACHIEVE YOUR BUSINESS GOALS!
 

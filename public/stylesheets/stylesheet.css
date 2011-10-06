@@ -60,9 +60,9 @@ table {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8aa8b4), to(#547684));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #333333, black);
+  background: -moz-linear-gradient(top, #8aa8b4, #547684);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000);
   /* For Internet Explorer 8 */
@@ -82,9 +82,9 @@ table {
 
 .bg-gradient-accent {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef1f3), to(white));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #efefef, white);
+  background: -moz-linear-gradient(top, #eef1f3, white);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
   /* For Internet Explorer 8 */
@@ -266,9 +266,9 @@ select, input, textarea {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8aa8b4), to(#547684));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #333333, black);
+  background: -moz-linear-gradient(top, #8aa8b4, #547684);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000);
   /* For Internet Explorer 8 */
@@ -288,9 +288,9 @@ select, input, textarea {
 
 .bg-gradient-accent {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef1f3), to(white));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #efefef, white);
+  background: -moz-linear-gradient(top, #eef1f3, white);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
   /* For Internet Explorer 8 */
@@ -357,7 +357,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 7px;
 }
 
-.corner-bottom, #alt-nav {
+.corner-bottom {
   -moz-border-radius-bottomleft: 7px;
   -khtml-border-radius-bottomleft: 7px;
   -webkit-border-bottom-left-radius: 7px;
@@ -416,6 +416,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 0;
   background: white;
+  border-left: 1px solid #c8d3d7;
+  border-right: 1px solid #c8d3d7;
 }
 
 .box, .center-container, .content {
@@ -482,9 +484,9 @@ i {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8aa8b4), to(#547684));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #333333, black);
+  background: -moz-linear-gradient(top, #8aa8b4, #547684);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000);
   /* For Internet Explorer 8 */
@@ -504,9 +506,9 @@ i {
 
 .bg-gradient-accent {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef1f3), to(white));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #efefef, white);
+  background: -moz-linear-gradient(top, #eef1f3, white);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
   /* For Internet Explorer 8 */
@@ -573,7 +575,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 7px;
 }
 
-.corner-bottom, #alt-nav {
+.corner-bottom {
   -moz-border-radius-bottomleft: 7px;
   -khtml-border-radius-bottomleft: 7px;
   -webkit-border-bottom-left-radius: 7px;
@@ -1311,9 +1313,9 @@ p:last-child {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8aa8b4), to(#547684));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #333333, black);
+  background: -moz-linear-gradient(top, #8aa8b4, #547684);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333, endColorstr=#000000);
   /* For Internet Explorer 8 */
@@ -1333,9 +1335,9 @@ p:last-child {
 
 .bg-gradient-accent {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef1f3), to(white));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #efefef, white);
+  background: -moz-linear-gradient(top, #eef1f3, white);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
   /* For Internet Explorer 8 */
@@ -1360,14 +1362,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 20px;
   overflow: hidden;
   *zoom: 1;
-  color: white;
-  background: #c69a3d;
+  color: #547684;
+  background: #abbbc1;
   font-size: 9px;
   font-weight: 200;
   text-transform: uppercase;
   line-height: 1.4em;
   letter-spacing: 1px;
-  border-top: 1px solid #b48c35;
+  border-top: 1px solid #547684;
   z-index: 100;
 }
 .m3c-bar .copyright {
@@ -1383,12 +1385,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 3px 0 0 0;
 }
 .m3c-bar a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .m3c-bar a:hover {
-  color: white;
-  border-bottom: 0px solid #dadada;
+  color: #547684;
+  border-bottom: 0px solid #efefef;
   text-decoration: none;
 }
 
@@ -1450,13 +1452,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 html {
   margin: 0;
   padding: 0;
-  background: white;
+  background: #eef1f3;
+  border-top: 4px solid #547684;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: white;
+  background: #eef1f3;
 }
 
 .content {
@@ -1464,46 +1468,4 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-#alt-nav {
-  position: absolute;
-  top: 0;
-  right: 60px;
-  width: 200px;
-  height: 20px;
-  color: #444444;
-  background: #444444;
-  border-top: 2px solid #c69a3d;
-  z-index: 90;
-}
-#alt-nav p {
-  position: relative;
-  top: -4px;
-  margin: 1px auto 0;
-  padding: 0;
-  text-align: center;
-}
-#alt-nav a {
-  display: inline;
-  margin: 0px 3px 3px 3px;
-  padding: 0;
-  font-size: 11px;
-  line-height: 1em;
-  color: white;
-}
-#alt-nav a:hover {
-  color: #aaaaaa;
-  text-decoration: none;
-}
-#alt-nav a img {
-  width: 15px;
-  height: 15px;
-  margin: -3px 0 0 0px;
-  vertical-align: middle;
-}
-#alt-nav a img:hover {
-  text-decoration: none;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
 }

@@ -10,51 +10,33 @@
 
 #header
 	@extend .box
-	@extend .bg-gradient-primary
 	width: 100%
 	height: $header-height
 	margin: 0
 	padding: 0
-	border-bottom: 2px solid $header-border
+	background: transparent
 	.center
 		@extend .center-container
-		@extend .bg-gradient-primary
 		@extend .box
-		#logo1
-			@extend .box
-			position: absolute
-			top: (($header-height - $logoH)/2)
-			left: (5px	+ $v-gap)
-			margin: 0
-			a
-				display: block
-				margin: 0
-				padding: 0
-				&:hover
-					@extend .opaque
-				img
-					width: $logoW
-					height: $logoH
-					margin: 0
-					padding: 0
-					border: 0
-					background: transparent
-		
-			
+
 // NAVMENU
 ul#topnav
-	@extend .font-helvetica
+	@extend .box
+	font-family: "EmbedFont-1"
 	+float-left
-	margin: 20px ($v-gap) 0 ($logoW + 25px + $h-gap)
-	padding: 0
+	margin: -5px 0 0 300px
+	padding: 0 ($h-gap) 0 150px
+	width: 625px
+	height: $header-height
 	font-size: 11px
 	letter-spacing: 0.05em
 	list-style: none
+	background: url(/images/bg-nav.png) no-repeat
 	z-index: 50
 
 ul#topnav li 
 	position: relative
-	+float-left
+	+float-right
 	margin: 0
 	padding: 0
 
@@ -65,18 +47,22 @@ ul#topnav li a
 ul#topnav a.topnav
 	+box-sizing(border-box)
 	+border-radius($corner-radius)
-	margin: 6px -1px 0 0
+	margin: 5px -1px 0 0
 	padding: 6px 1.7em
 	color: $nav-text
 	font-size: 12px
 	font-weight: 200
 	text-align: center
+	text-transform: uppercase
+	border: 1px solid transparent
 
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
 	color: $nav-text-hover
 	background: $primary
- 
+	border-right: 1px solid $secondary
+	border-bottom: 1px solid $secondary
+
 ul#topnav li .sub 
 	@extend .corner-bottom
 	display: none
@@ -143,3 +129,6 @@ body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a
 
 .navigation-hover
 	color: $nav-text-hover
+	background: $primary
+	border-bottom: 1px solid $secondary-light
+	
