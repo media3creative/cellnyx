@@ -3,7 +3,7 @@
 // MAIN NAVIGATION
 - @link1 = ["Shop", "/home"]
 - @link2 = ["About", "/about"]
-- @link3 = ["Privacy Policy", "/privacy"]
+- @link3 = ["HIPAA Privacy", "http://www.hhs.gov/ocr/privacy/hipaa/understanding/index.html"]
 - @link4 = ["sss", "/sss"]
 - @link5 = ["Contact", "/contact"]
 
@@ -66,7 +66,7 @@
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
           %li
-            %a#three.topnav{:href => @link3[1]}
+            %a#three.topnav{:href => @link3[1], :target => "_blank"}
               =@link3[0]
           %li
             %a#two.topnav{:href => @link2[1]}
@@ -74,6 +74,11 @@
           %li
             %a#five.topnav{:href => @link1[1]}
               =@link1[0]
+    #disclaimer
+      .center
+        // LINKS FLOAT RIGHT, REVERSE ORDER
+        %p
+          %i These tests are intended for Research Use Only
 
     .content
       = yield
